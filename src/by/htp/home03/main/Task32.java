@@ -23,9 +23,9 @@ public class Task32 {
 
 	for (int i = 0; i < userString.length(); i++) {
 	    if (i == 0) {
-		isAllowedString = allowedAll.contains(userString.substring(i, i + 1));
-	    } else {
 		isAllowedString = allowedFirst.contains(userString.substring(i, i + 1));
+	    } else {
+		isAllowedString = allowedAll.contains(userString.substring(i, i + 1));
 	    }
 	    if (!isAllowedString) {
 		break;
